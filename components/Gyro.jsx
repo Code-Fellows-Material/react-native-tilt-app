@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { StyleSheet, Text, TouchableOpacity, View, Button } from 'react-native';
 import { Gyroscope } from 'expo-sensors';
 import {useColorModeValue} from 'native-base'
   
@@ -15,6 +15,7 @@ export default function Gyro() {
       backgroundColor: useColorModeValue("#FFF", "#000")
     },
     text: {
+      fontSize: 28,
       textAlign: 'center',
       color: useColorModeValue("#000", "#FFF")
     },
@@ -22,19 +23,31 @@ export default function Gyro() {
       flexDirection: 'row',
       alignItems: 'stretch',
       marginTop: 15,
-      marginHorizontal: 20
+      marginHorizontal: 20,
+      padding: 0
     },
     button: {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: '#eee',
+      backgroundColor: useColorModeValue("#6200ee", "#50BFC3"),
+      color: 'white',
       padding: 10,
+      margin: 10,
+      borderLeftWidth: 3,
+      borderRightWidth: 3,
+      borderTopWidth: 3,
+      borderBottomWidth: 3,
+      borderColor: 'black',
+      borderRadius: 8
     },
     middleButton: {
-      borderLeftWidth: 1,
-      borderRightWidth: 1,
-      borderColor: '#ccc',
+      borderLeftWidth: 3,
+      borderRightWidth: 3,
+      borderTopWidth: 3,
+      borderBottomWidth: 3,
+      borderColor: 'black',
+      borderRadius: 8
     },
   });
   
