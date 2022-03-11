@@ -21,8 +21,7 @@ export default function AppBar() {
           </Text>
         </HStack>
         <HStack>
-          <IconButton icon={<Ionicons name="moon-outline" size={24} color="white" onPress={toggleColorMode}/>} />
-          <IconButton icon={<Icon as={MaterialIcons} name="more-vert" size="sm" color="white"/>} />
+          <IconButton icon={<Ionicons name="moon-outline" size={40} color="white" onPress={toggleColorMode}/>} />
         </HStack>
       </HStack>
     </>;

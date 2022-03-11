@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { StatusBar, Dimensions, Text, View } from 'react-native';
+import { StatusBar, Dimensions, View } from 'react-native';
 import {useColorModeValue} from 'native-base'
 import { DeviceMotion } from 'expo-sensors';
-import Svg, { Circle, Line } from 'react-native-svg';
+import Svg, { Circle } from 'react-native-svg';
 
 const { height, width } = Dimensions.get('window');
 const centerX = width / 2,
@@ -12,8 +12,8 @@ export default function OSensor() {
 
 
   const [data, setData] = useState({
-    beta: '',
-    gamma: '',
+    beta: 1,
+    gamma: 1,
   });
 
   useEffect(() => {
